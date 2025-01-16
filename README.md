@@ -7,7 +7,5 @@ in a more controlled environment.
 # Generating the lockfiles
 
 ```
-uv export -o requirements.txt
-uv run pybuild-deps compile --output-file=requirements-build.txt
-make lock-rpms
+make lock
 ```

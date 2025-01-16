@@ -4,10 +4,8 @@
 # https://url.corp.redhat.com/prefetch-rpm
 
 packages:
-  # # build dependencies
-  # - crypto-policies-scripts
-  # - gcc
-  # - libpq-devel
+  # build dependencies
+  - gcc
   # - python3.12-devel
   # actual dependencies
   - python3.12
