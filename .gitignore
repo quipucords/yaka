@@ -6,3 +6,6 @@ __pycache__/
 # pyenv/uv/virtual env
 .python-version
 .venv/
+
+# other
+ubi.repo
