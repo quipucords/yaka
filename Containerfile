@@ -5,7 +5,7 @@ FROM registry.access.redhat.com/ubi9/ubi-minimal
 ARG CRATES_PATH="/tmp/output/deps/generic"
 
 WORKDIR /app
-ARG BUILD_PACKAGES="cargo gcc libffi-devel python3.12-devel"
+ARG BUILD_PACKAGES="cargo gcc libffi-devel openssl-devel python3.12-devel"
 RUN microdnf install \
     python3.12 \
     ${BUILD_PACKAGES} \

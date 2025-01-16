@@ -8,6 +8,7 @@ packages:
   - cargo
   - gcc
   - libffi-devel
+  - openssl-devel
   - python3.12-devel
   # actual dependencies
   - python3.12
