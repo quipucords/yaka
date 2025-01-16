@@ -5,6 +5,7 @@
 
 packages:
   # build dependencies
+  - cargo
   - gcc
   - libffi-devel
   - python3.12-devel

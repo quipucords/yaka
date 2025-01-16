@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/ubi9/ubi-minimal
 
 WORKDIR /app
-ARG BUILD_PACKAGES="gcc libffi-devel python3.12-devel"
+ARG BUILD_PACKAGES="cargo gcc libffi-devel python3.12-devel"
 RUN microdnf install \
     python3.12 \
     ${BUILD_PACKAGES} \
