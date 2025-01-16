@@ -12,3 +12,6 @@ dependencies = [
 dev = [
     "pybuild-deps>=0.4.0",
 ]
+
+[tool.uv.sources]
+pybuild-deps = { git = "https://github.com/bruno-fs/pybuild-deps", rev = "rust-support" }

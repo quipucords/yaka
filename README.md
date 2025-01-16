@@ -4,8 +4,15 @@ This is a playground to prototype, reproduce issues in a smaller scale (and atte
 in a more controlled environment.
 
 
-# Generating the lockfiles
+## Installation
+```
+make install
+```
+`podman` and `uv` are required
+
+
+## Generating the lockfiles
 
 ```
-make lock
+make lock-all
 ```
