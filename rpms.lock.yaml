@@ -74,6 +74,13 @@ arches:
     name: python3.12
     evr: 3.12.5-2.el9_5.2
     sourcerpm: python3.12-3.12.5-2.el9_5.2.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/p/python3.12-devel-3.12.5-2.el9_5.2.x86_64.rpm
+    repoid: ubi-9-appstream-rpms
+    size: 335921
+    checksum: sha256:954b053517261b6a8dbc368421bee66fd40de5ae712322b56c380edf8c6b9174
+    name: python3.12-devel
+    evr: 3.12.5-2.el9_5.2
+    sourcerpm: python3.12-3.12.5-2.el9_5.2.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/p/python3.12-libs-3.12.5-2.el9_5.2.x86_64.rpm
     repoid: ubi-9-appstream-rpms
     size: 10183187

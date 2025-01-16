@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/ubi9/ubi-minimal
 
 WORKDIR /app
-ARG BUILD_PACKAGES="gcc"
+ARG BUILD_PACKAGES="gcc python3.12-devel"
 RUN microdnf install \
     python3.12 \
     ${BUILD_PACKAGES} \
