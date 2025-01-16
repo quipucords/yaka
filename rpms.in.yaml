@@ -6,7 +6,7 @@
 packages:
   # build dependencies
   - gcc
-  # - python3.12-devel
+  - python3.12-devel
   # actual dependencies
   - python3.12
 
