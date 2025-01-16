@@ -9,4 +9,5 @@ in a more controlled environment.
 ```
 uv export -o requirements.txt
 uv run pybuild-deps compile --output-file=requirements-build.txt
+make lock-rpms
 ```
