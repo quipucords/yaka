@@ -25,6 +25,12 @@ spec:
     value: quay.io/redhat-user-workloads/discovery-tenant/yaka:{{revision}}
   - name: dockerfile
     value: Containerfile
+  - name: hermetic
+    value: "true"
+  - name: prefetch-input
+    value: '[{"type": "pip", "path": "lockfiles"}, {"type": "rpm", "path": "lockfiles"}, {"type": "generic", "path": "lockfiles"}]'
+  - name: build-args
+    value: ["CRATES_PATH=/cachi2/output/deps/generic"]
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while maintaining trust after pipeline customization.
@@ -172,6 +178,10 @@ spec:
         value: $(params.output-image).prefetch
       - name: ociArtifactExpiresAfter
         value: $(params.image-expires-after)
+      # enabling dev-package-managers is required for rpm support
+      # TODO: disable once it rpm support becomes official
+      - name: dev-package-managers
+        value: "true"
       runAfter:
       - clone-repository
       taskRef:
