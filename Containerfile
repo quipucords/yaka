@@ -19,7 +19,7 @@ COPY prepare-rust-deps.py .
 RUN python prepare-rust-deps.py "${CRATES_PATH}"
 
 COPY lockfiles/requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install --verbose -r requirements.txt
 
 # final stage
 FROM registry.access.redhat.com/ubi9/ubi-minimal
