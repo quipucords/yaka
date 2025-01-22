@@ -30,6 +30,8 @@ spec:
     value: Containerfile
   - name: hermetic
     value: "true"
+  - name: build-source-image
+    value: "true"
   - name: prefetch-input
     value: '[{"type": "pip", "path": "lockfiles"}, {"type": "rpm", "path": "lockfiles"}, {"type": "generic", "path": "lockfiles"}]'
   - name: build-args
