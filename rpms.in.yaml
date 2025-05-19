@@ -15,7 +15,7 @@ packages:
 
 contentOrigin:
   # make lock-rpms automatically generates ubi.repo file
-  repofiles: ["./ubi.repo"]
+  repofiles: ["lockfiles/ubi.repo"]
 
 arches:
   - x86_64
