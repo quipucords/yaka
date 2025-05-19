@@ -1,5 +1,5 @@
 # build in multiple stages so cleanup of transitive dependencies is easier
-FROM registry.access.redhat.com/ubi9/ubi-minimal as builder
+FROM registry.access.redhat.com/ubi9/ubi-minimal@sha256:92b1d5747a93608b6adb64dfd54515c3c5a360802db4706765ff3d8470df6290 as builderRUN microdnf install -y python3.12
 # Point to the default path used by cachi2-playground. For koflux
 # this is /cachi2/output/deps/generic/
 ARG CRATES_PATH="/tmp/output/deps/generic"
@@ -22,8 +22,7 @@ COPY lockfiles/requirements.txt .
 RUN pip install -r requirements.txt
 
 # final stage
-FROM registry.access.redhat.com/ubi9/ubi-minimal
-RUN microdnf install -y python3.12
+FROM registry.access.redhat.com/ubi9/ubi-minimal@sha256:92b1d5747a93608b6adb64dfd54515c3c5a360802db4706765ff3d8470df6290 as builderRUN microdnf install -y python3.12
 COPY --from=builder /venv /venv
 WORKDIR /app
 COPY hello.py key.txt message.txt .
