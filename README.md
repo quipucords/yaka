@@ -48,3 +48,4 @@ OUTPUT_IMAGE="localhost/yaka-hermetic:latest"
 ```
 
 Then run `./clone-and-build.sh`.
+mamao
