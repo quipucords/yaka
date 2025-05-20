@@ -42,7 +42,7 @@ You will also need a `input.env` file like the following
 GIT_REPO="https://github.com/quipucords/yaka"
 REF="main"
 PREFETCH_INPUT='[{"type": "pip", "path": "lockfiles"}, {"type": "rpm", "path": "lockfiles"}, {"type": "generic", "path": "lockfiles"}]'
-CACHI2_IMAGE="quay.io/redhat-appstudio/cachi2:latest"
+CACHI2_IMAGE="quay.io/konflux-ci/hermeto:latest"
 CONTAINERFILE_PATH="./Containerfile"
 OUTPUT_IMAGE="localhost/yaka-hermetic:latest"
 ```
