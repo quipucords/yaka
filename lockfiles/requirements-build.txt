@@ -18,7 +18,7 @@ pycparser==2.22 ; platform_python_implementation != "PyPy"
     # via cffi
 semantic-version==2.10.0
     # via setuptools-rust
-setuptools-rust==1.10.2
+setuptools-rust==1.11.1
     # via maturin
 setuptools-scm==8.1.0
     # via setuptools-rust
