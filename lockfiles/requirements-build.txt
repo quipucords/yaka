@@ -10,7 +10,7 @@ flit-core==3.10.1
     # via
     #   packaging
     #   wheel
-maturin==1.8.1
+maturin==1.8.6
     # via cryptography
 packaging==24.2
     # via setuptools-scm
