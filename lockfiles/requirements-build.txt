@@ -12,7 +12,7 @@ flit-core==3.10.1
     #   wheel
 maturin==1.8.1
     # via cryptography
-packaging==24.2
+packaging==25.0
     # via setuptools-scm
 pycparser==2.22 ; platform_python_implementation != "PyPy"
     # via cffi
