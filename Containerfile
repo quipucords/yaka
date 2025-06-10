@@ -1,5 +1,5 @@
 # build in multiple stages so cleanup of transitive dependencies is easier
-FROM registry.access.redhat.com/ubi9/ubi-minimal@sha256:92b1d5747a93608b6adb64dfd54515c3c5a360802db4706765ff3d8470df6290 as builder
+FROM registry.access.redhat.com/ubi9/ubi-minimal@sha256:f172b3082a3d1bbe789a1057f03883c1113243564f01cd3020e27548b911d3f8 as builder
 # Point to the default path used by cachi2-playground. For koflux
 # this is /cachi2/output/deps/generic/
 ARG CRATES_PATH="/tmp/output/deps/generic"
@@ -22,7 +22,7 @@ COPY lockfiles/requirements.txt .
 RUN pip install -r requirements.txt
 
 # final stage
-FROM registry.access.redhat.com/ubi9/ubi-minimal@sha256:92b1d5747a93608b6adb64dfd54515c3c5a360802db4706765ff3d8470df6290
+FROM registry.access.redhat.com/ubi9/ubi-minimal@sha256:f172b3082a3d1bbe789a1057f03883c1113243564f01cd3020e27548b911d3f8
 COPY --from=builder /venv /venv
 WORKDIR /app
 COPY hello.py key.txt message.txt .
