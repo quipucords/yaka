@@ -4,5 +4,5 @@ cffi==1.17.1 ; platform_python_implementation != 'PyPy'
     # via cryptography
 cryptography==45.0.2
     # via yaka
-pycparser==2.22 ; platform_python_implementation != 'PyPy'
+pycparser==2.23 ; platform_python_implementation != 'PyPy'
     # via cffi
