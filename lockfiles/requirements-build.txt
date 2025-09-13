@@ -4,7 +4,7 @@
 #
 #    pybuild-deps compile --output-file=lockfiles/requirements-build.txt lockfiles/requirements.txt
 #
-cffi==1.17.1 ; platform_python_implementation != "PyPy"
+cffi==2.0.0 ; platform_python_implementation != "PyPy"
     # via cryptography
 flit-core==3.10.1
     # via
