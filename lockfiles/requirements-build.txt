@@ -14,7 +14,7 @@ maturin==1.8.1
     # via cryptography
 packaging==24.2
     # via setuptools-scm
-pycparser==2.22 ; platform_python_implementation != "PyPy"
+pycparser==3.0 ; platform_python_implementation != "PyPy"
     # via cffi
 semantic-version==2.10.0
     # via setuptools-rust
